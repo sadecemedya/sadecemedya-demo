@@ -18,7 +18,7 @@ a{color:inherit}
 .wrap{width:min(1120px,100% - 32px);margin-inline:auto}
 .demo{background:#0D0D0D;color:#F3F0EA;font:500 12.5px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
 .demo b{color:#E8572A}
-header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav{position:sticky;top:0;z-index:20;box-shadow:0 6px 24px -18px rgba(0,0,0,.4);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
 .logo{font:600 21px/1.1 var(--h);letter-spacing:0;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .logo{display:flex;align-items:center;gap:10px}.logo span{overflow:hidden;text-overflow:ellipsis}
@@ -31,17 +31,26 @@ header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--b
 .btn-ghost{border:1.5px solid currentColor}
 .nav .btn{min-height:40px;padding:0 18px;font-size:14px}
 .hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.25) 40%,rgba(0,0,0,.78) 100%)}
-.hero .wrap{position:relative;z-index:1;padding:120px 0 64px}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
+@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,10,.86) 0%,rgba(8,8,10,.66) 38%,rgba(8,8,10,.22) 72%,rgba(8,8,10,.08) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,.55) 100%)}
+.hero::before{content:"";position:absolute;z-index:1;left:0;right:0;bottom:0;height:6px;background:var(--acc)}
+.hero .wrap{position:relative;z-index:2;padding:120px 0 72px;text-shadow:0 2px 14px rgba(0,0,0,.55),0 1px 2px rgba(0,0,0,.4)}
+.hero .wrap>*{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>*:nth-child(2){animation-delay:.08s}.hero .wrap>*:nth-child(3){animation-delay:.16s}.hero .wrap>*:nth-child(4){animation-delay:.26s}
+.hero .wrap>*:nth-child(5){animation-delay:.34s}.hero .wrap>*:nth-child(6){animation-delay:.42s}.hero .wrap>*:nth-child(7){animation-delay:.5s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 .lgb{display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;margin-bottom:20px;box-shadow:0 0 0 3px rgba(255,255,255,.85),0 10px 30px rgba(0,0,0,.35);background:#fff}
-.eyebrow{display:inline-block;font:600 12.5px/1 var(--b);letter-spacing:.14em;text-transform:uppercase;opacity:.9;margin-bottom:18px}
-.hero h1{font:600 clamp(40px,7.4vw,84px)/1.02 var(--h);letter-spacing:-.015em;max-width:15ch;text-wrap:balance}
+.eyebrow{display:flex;align-items:center;gap:12px;font:600 12.5px/1 var(--b);letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--acc)}
+.hero h1{font:600 clamp(40px,7.4vw,84px)/1.02 var(--h);letter-spacing:-.015em;max-width:16ch;text-wrap:balance}
+.hero h1.orta{font-size:clamp(36px,5.6vw,68px)}
+.hero h1.uzun{font-size:clamp(32px,4.4vw,54px);max-width:20ch}
 .hero .sl{font:italic 500 clamp(20px,2.6vw,28px)/1.3 var(--h);margin-top:14px;opacity:.95}
-.hero p.alt{max-width:52ch;margin-top:14px;font-size:17px;opacity:.88}
+.hero p.alt{max-width:50ch;margin-top:14px;font-size:17px;color:rgba(255,255,255,.92)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .hero .btn-ghost{color:#fff}
-.puan{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);font-size:14px}
+.puan{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:9px 16px 9px 12px;border-radius:999px;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.18);text-shadow:none;backdrop-filter:blur(8px);font-size:14px}
 .puan .y{color:#FFC94A;letter-spacing:1px}
 .facts{border-bottom:1px solid var(--line)}
 .facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
@@ -49,26 +58,36 @@ header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--b
 .facts strong{display:block;font:600 32px/1 var(--h);color:var(--acct)}
 .facts span{font-size:13.5px;color:var(--mute)}
 section{padding:clamp(64px,9vw,112px) 0;scroll-margin-top:64px}
-.kicker{font:600 12.5px/1 var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--acct)}
+.kicker{font:600 12.5px/1 var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--acct);display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
 h2{font:600 clamp(32px,4.4vw,52px)/1.08 var(--h);letter-spacing:-.01em;margin-top:12px;max-width:20ch;text-wrap:balance}
 .lead{color:var(--mute);max-width:56ch;margin-top:14px;font-size:17px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
-.card{background:var(--soft);border-radius:18px;padding:28px 26px 30px}
-.card .no{font:600 13px/1 var(--b);color:var(--acct)}
+.card{position:relative;overflow:hidden;background:var(--soft);border-radius:18px;padding:28px 26px 30px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.card::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--acc);transition:width .45s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(0,0,0,.35)}.card:hover::after{width:100%}
+.card .no{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--acc);color:var(--onacc);font:700 13px/1 var(--b)}
+.bant{background:var(--acc);color:var(--onacc);overflow:hidden;white-space:nowrap;padding:16px 0}
+.bant .iz{display:inline-flex;gap:28px;animation:akis 38s linear infinite;font:600 19px/1 var(--h);letter-spacing:.01em}
+.bant i{font-style:normal;opacity:.7}
+@keyframes akis{to{transform:translateX(-50%)}}
 .card h3{font:600 21px/1.25 var(--h);margin:14px 0 8px}
 .card p{color:var(--mute);font-size:15px}
 .galeri{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:240px 240px;gap:12px;margin-top:44px}
-.galeri img{width:100%;height:100%;object-fit:cover;border-radius:16px}
-.galeri img:first-child{grid-row:span 2}
-.galeri img:last-child{grid-column:span 2}
+.galeri figure{margin:0;overflow:hidden;border-radius:16px;position:relative}
+.galeri figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.galeri figure:hover img{transform:scale(1.07)}
+.galeri figure::after{content:"";position:absolute;inset:0;box-shadow:inset 0 -60px 60px -40px rgba(0,0,0,.35);pointer-events:none}
+.galeri figure:first-child{grid-row:span 2}
+.galeri figure:last-child{grid-column:span 2}
 .hak{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.hak img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.hak img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:18px 18px 0 var(--acc)}
 .hak .big{font:500 24px/1.45 var(--h);margin-top:20px}
 .google{display:flex;align-items:center;gap:16px;margin-top:30px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;max-width:420px}
 .google .n{font:600 40px/1 var(--h)}
 .google .y{color:#F4B400;letter-spacing:2px}
 .google small{display:block;color:var(--mute);font-size:13.5px}
-.konum{background:var(--acc2);color:#fff}
+.konum{background:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/22px 22px,var(--acc2);color:#fff}
 .konum .kicker{color:color-mix(in srgb,var(--acc) 70%,#fff)}
 .konum .lead{color:rgba(255,255,255,.72)}
 .kgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-top:40px}
@@ -78,8 +97,15 @@ h2{font:600 clamp(32px,4.4vw,52px)/1.08 var(--h);letter-spacing:-.01em;margin-to
 .kart b{font:600 12px/1 var(--b);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55)}
 .kart a,.kart span{font-size:19px;font-weight:500;text-decoration:none}
 .kart .btn{margin-top:auto}
+.cagri{background:var(--acc);color:var(--onacc);text-align:center;padding:clamp(56px,8vw,96px) 0;position:relative;overflow:hidden}
+.cagri::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.18),transparent 40%),radial-gradient(circle at 80% 70%,rgba(0,0,0,.18),transparent 45%)}
+.cagri .wrap{position:relative}.cagri h2{margin:0 auto;max-width:22ch}.cagri .cta{justify-content:center}
+.btn-ters{background:var(--onacc);color:var(--acc)}.btn-cizgi{border:1.5px solid currentColor;color:var(--onacc)}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
 footer{padding:36px 0 110px;font-size:14px;color:var(--mute)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .wrap.sm{display:block}
 .sm{display:block;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px}
 .sm a{color:var(--acct);font-weight:600;text-decoration:none}
 .altbar{display:none}
@@ -89,8 +115,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  .hak,.kgrid{grid-template-columns:1fr;gap:28px}
  .hak img{aspect-ratio:16/11}
  .galeri{grid-template-columns:1fr 1fr;grid-template-rows:200px 160px 160px}
- .galeri img:first-child{grid-column:span 2;grid-row:auto}
- .galeri img:last-child{grid-column:span 2}
+ .galeri figure:first-child{grid-column:span 2;grid-row:auto}
+ .galeri figure:last-child{grid-column:span 2}
 }
 @media (max-width:560px){
  .grid{grid-template-columns:1fr}
@@ -117,7 +143,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  <div class="wrap">
   <img class="lgb" src="logo.png" alt="">
   <span class="eyebrow">Kafe · Canik, Samsun</span>
-  <h1>My Mandıra Cafe Şarküteri</h1>
+  <h1 class="orta">My Mandıra Cafe Şarküteri</h1>
   <p class="sl">Bir kahve molası, Canik&#x27;da.</p>
   <p class="alt">Taze demlenmiş kahve, ev yapımı tatlılar ve oturup kalmak isteyeceğiniz bir ortam.</p>
   <div class="cta"><a class="btn btn-acc" href="https://wa.me/905436263472?text=Merhaba%20My%20Mand%C4%B1ra%20Cafe%20%C5%9Eark%C3%BCteri%2C%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.">WhatsApp'tan yazın</a><a class="btn btn-ghost" href="tel:+905436263472">0543 626 34 72</a></div>
@@ -131,7 +157,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  <div><strong>Canik</strong><span>Samsun</span></div>
 </div></div>
 
-<section id="hizmetler"><div class="wrap">
+<div class="bant" aria-hidden="true"><div class="iz"><span>Kahveler</span><i>✦</i><span>Çay &amp; Sıcak İçecekler</span><i>✦</i><span>Tatlılar</span><i>✦</i><span>Kahvaltı</span><i>✦</i><span>Atıştırmalıklar</span><i>✦</i><span>Paket Servis</span><i>✦</i><span>Kahveler</span><i>✦</i><span>Çay &amp; Sıcak İçecekler</span><i>✦</i><span>Tatlılar</span><i>✦</i><span>Kahvaltı</span><i>✦</i><span>Atıştırmalıklar</span><i>✦</i><span>Paket Servis</span><i>✦</i></div></div>
+
+<section id="hizmetler"><div class="wrap rv">
  <span class="kicker">Hizmetlerimiz</span>
  <h2>Size neler sunuyoruz?</h2>
  <div class="grid"><article class="card"><span class="no">01</span><h3>Kahveler</h3><p>Espresso bazlı sıcak ve soğuk kahveler, filtre kahve.</p></article>
@@ -142,13 +170,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <article class="card"><span class="no">06</span><h3>Paket Servis</h3><p>Siparişini ver, hazır olunca gel al.</p></article></div>
 </div></section>
 
-<section id="galeri" style="padding-top:0"><div class="wrap">
+<section id="galeri" style="padding-top:0"><div class="wrap rv">
  <span class="kicker">Galeri</span>
  <h2>İçeriden kareler</h2>
- <div class="galeri"><img src="foto2.jpg" alt="" loading="lazy"><img src="foto3.jpg" alt="" loading="lazy"><img src="foto4.jpg" alt="" loading="lazy"><img src="foto1.jpg" alt="" loading="lazy" style="object-position:center 30%"></div>
+ <div class="galeri"><figure><img src="foto2.jpg" alt="" loading="lazy"></figure><figure><img src="foto3.jpg" alt="" loading="lazy"></figure><figure><img src="foto4.jpg" alt="" loading="lazy"></figure><figure><img src="foto1.jpg" alt="" loading="lazy" style="object-position:center 30%"></figure></div>
 </div></section>
 
-<section id="hakkimizda" style="padding-top:0"><div class="wrap hak">
+<section id="hakkimizda" style="padding-top:0"><div class="wrap hak rv">
  <img src="foto3.jpg" alt="" loading="lazy">
  <div>
   <span class="kicker">Hakkımızda</span>
@@ -158,7 +186,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  </div>
 </div></section>
 
-<section id="konum" class="konum"><div class="wrap">
+<section id="konum" class="konum"><div class="wrap rv">
  <span class="kicker">İletişim & Konum</span>
  <h2>Sizi bekliyoruz</h2>
  <p class="lead">Canik, Samsun. Yol tarifi için haritaya dokunun.</p>
@@ -172,9 +200,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  </div>
 </div></section>
 
+<section class="cagri"><div class="wrap rv">
+ <h2>Sizi bir kahveye bekliyoruz</h2>
+ <div class="cta"><a class="btn btn-ters" href="https://wa.me/905436263472?text=Merhaba%20My%20Mand%C4%B1ra%20Cafe%20%C5%9Eark%C3%BCteri%2C%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.">WhatsApp'tan yazın</a><a class="btn btn-cizgi" href="tel:+905436263472">0543 626 34 72</a></div>
+</div></section>
+
 <footer><div class="wrap">
  <span>© 2026 My Mandıra Cafe Şarküteri</span><span>Canik, Samsun</span>
 </div><div class="wrap sm">Bu demo, <a href="https://www.sadecemedya.com">Sadece Medya</a> tarafından My Mandıra Cafe Şarküteri için hazırlanmıştır. Logo ve fotoğraflar işletmenin kendi Instagram hesabından alınmıştır.</div></footer>
 <nav class="altbar"><a href="tel:+905436263472">Ara</a><a class="wa" href="https://wa.me/905436263472?text=Merhaba%20My%20Mand%C4%B1ra%20Cafe%20%C5%9Eark%C3%BCteri%2C%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.">WhatsApp</a></nav>
+<script>document.documentElement.classList.add('js');(function(){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');o.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el){o.observe(el)});setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('on')})},2500)})();</script>
 </body>
 </html>
