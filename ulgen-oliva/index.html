@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ülgen Oliva · Manisa Muradiye'den Taş Baskı Zeytinyağı</title>
+<meta name="description" content="Manisa Muradiye bahçelerinden erken hasat taş baskı ve olgun hasat natürel sızma zeytinyağı. WhatsApp sipariş hattı, kapıda ödeme, 1.500 TL üzeri ücretsiz kargo.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/logo.png">
+<style>
+@font-face{font-family:Zodiak;src:url(fonts/Zodiak-Variable.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:Zodiak;src:url(fonts/Zodiak-VariableItalic.woff2) format("woff2");font-style:italic;font-weight:100 900;font-display:swap}
+@font-face{font-family:Satoshi;src:url(fonts/Satoshi-Variable.woff2) format("woff2");font-weight:300 900;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(fonts/InstrumentSerif-Italic.ttf);font-style:italic;font-display:swap}
+:root{
+  --kagit:#F4EFE3; --kagit2:#ECE4D2; --krem:#FBF8F1;
+  --zeytin:#21402A; --zeytin2:#2E5638; --yaprak:#9CA33F; --yag:#D2C534; --altin:#B88A2E;
+  --murekkep:#1B2219; --gri:#5E6657; --cizgi:#D8CFBB; --wa:#25D366; --wa2:#128C4A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:Satoshi,system-ui,sans-serif;background:var(--kagit);color:var(--murekkep);font-size:17px;line-height:1.55;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.35;mix-blend-mode:multiply;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .3  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .18 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.w{max-width:1240px;margin:0 auto;padding:0 28px}
+.serif{font-family:Zodiak,Georgia,serif}
+em.i,.i{font-family:"Instrument Serif",Zodiak,serif;font-style:italic;font-weight:400}
+.ust{background:var(--zeytin);color:#E9E6CF;font-size:13.5px;letter-spacing:.02em;overflow:hidden;white-space:nowrap}
+.ust .bant{display:inline-flex;gap:48px;padding:9px 0;animation:kay 38s linear infinite}
+.ust b{color:var(--yag);font-weight:600}
+@keyframes kay{to{transform:translateX(-50%)}}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(244,239,227,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--cizgi)}
+.hd{display:flex;align-items:center;gap:28px;height:78px}
+.hd .logo img{height:58px;width:auto}
+.hd nav{display:flex;gap:26px;font-size:15px;font-weight:500;margin-left:12px}
+.hd nav a{text-decoration:none;opacity:.8}
+.hd nav a:hover{opacity:1;color:var(--zeytin2)}
+.hd .sag{margin-left:auto;display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 22px;font-weight:600;font-size:15.5px;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#05361a;box-shadow:0 8px 24px -10px rgba(37,211,102,.8)}
+.btn-wa:hover{background:#2fe072}
+.btn-k{background:var(--zeytin);color:#F4EFE3}
+.btn-k:hover{background:var(--zeytin2)}
+.btn-c{border:1.5px solid var(--zeytin);color:var(--zeytin)}
+.btn svg{width:20px;height:20px;flex:none}
+.sepet-btn{position:relative;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--cizgi);display:grid;place-items:center;background:var(--krem)}
+.sepet-btn svg{width:22px}
+.sepet-btn .n{position:absolute;top:-4px;right:-4px;background:var(--altin);color:#fff;font-size:11.5px;font-weight:700;min-width:21px;height:21px;border-radius:11px;display:grid;place-items:center;transform:scale(0);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.sepet-btn .n.on{transform:scale(1)}
+.sepet-btn.zipla{animation:zipla .5s}
+@keyframes zipla{40%{transform:scale(1.18) rotate(-8deg)}}
+
+/* hero */
+.hero{position:relative;padding:64px 0 40px}
+.hero .g{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.etiket{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--zeytin2)}
+.etiket::before{content:"";width:28px;height:1.5px;background:currentColor}
+.hero h1{font-family:Zodiak,serif;font-weight:400;font-size:clamp(46px,6.4vw,92px);line-height:.98;letter-spacing:-.025em;margin:22px 0 24px;color:var(--zeytin)}
+.hero h1 .i{color:var(--altin);font-size:1.08em}
+.hero p.lead{font-size:19px;color:var(--gri);max-width:520px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0 30px}
+.guven{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:var(--gri)}
+.guven span{display:flex;align-items:center;gap:7px}
+.guven svg{width:17px;color:var(--zeytin2)}
+.sahne{position:relative;aspect-ratio:1/1.02;max-width:560px;justify-self:end;width:100%}
+.daire{position:absolute;inset:7%;border-radius:50%;overflow:hidden;box-shadow:0 40px 80px -40px rgba(33,64,42,.6)}
+.daire video{width:100%;height:100%;object-fit:cover}
+.daire::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 10px rgba(244,239,227,.35)}
+.halka{position:absolute;inset:0;animation:don 40s linear infinite}
+.halka text{font-family:Satoshi;font-size:13.2px;letter-spacing:.32em;font-weight:600;fill:var(--zeytin)}
+@keyframes don{to{transform:rotate(360deg)}}
+.sise{position:absolute;width:54%;left:-16%;bottom:-8%;filter:drop-shadow(0 30px 30px rgba(20,40,20,.35));animation:sal 6s ease-in-out infinite}
+@keyframes sal{50%{transform:translateY(-12px) rotate(-2deg)}}
+.rozet{position:absolute;right:2%;top:6%;width:122px;height:122px;border-radius:50%;background:var(--yag);color:var(--zeytin);display:grid;place-items:center;text-align:center;font-family:Zodiak;line-height:1.05;transform:rotate(10deg);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
+.rozet b{display:block;font-size:30px;font-weight:500}
+.rozet small{font-family:Satoshi;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+
+.olcu{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--cizgi);border-bottom:1px solid var(--cizgi)}
+.olcu div{padding:24px 22px;border-right:1px solid var(--cizgi)}
+.olcu div:last-child{border:0}
+.olcu b{font-family:Zodiak;font-weight:400;font-size:42px;color:var(--zeytin);display:block;line-height:1}
+.olcu span{font-size:13.5px;color:var(--gri)}
+
+section{padding:96px 0}
+.bas{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.bas h2{font-family:Zodiak;font-weight:400;font-size:clamp(36px,4.4vw,60px);line-height:1.02;letter-spacing:-.02em;color:var(--zeytin);margin-top:14px;max-width:720px}
+.bas h2 .i{color:var(--altin)}
+.bas p{max-width:400px;color:var(--gri)}
+
+/* sipariş hattı */
+.hat{background:var(--zeytin);color:#EDE9D6;position:relative;overflow:hidden}
+.hat .etiket{color:var(--yag)}
+.hat .bas h2{color:#F4EFE3}
+.hat .bas h2 .i{color:var(--yag)}
+.hat .bas p{color:#B9C2AE}
+.hat .g{display:grid;grid-template-columns:1fr 380px 1fr;gap:40px;align-items:center}
+.yol{display:grid;gap:18px}
+.yol .k{border:1px solid rgba(237,233,214,.18);border-radius:22px;padding:24px;background:rgba(255,255,255,.03);transition:background .3s,border-color .3s}
+.yol .k.akt{background:rgba(210,197,52,.09);border-color:rgba(210,197,52,.55)}
+.yol .k .no{font-family:Zodiak;font-size:15px;color:var(--yag)}
+.yol .k h3{font-family:Zodiak;font-weight:400;font-size:24px;margin:4px 0 6px;color:#fff}
+.yol .k p{font-size:15px;color:#B9C2AE}
+.tel{width:100%;aspect-ratio:9/18.5;background:#0d0d0d;border-radius:46px;padding:12px;box-shadow:0 50px 90px -30px rgba(0,0,0,.6),0 0 0 2px #3a3a3a inset;position:relative}
+.ekran{width:100%;height:100%;border-radius:36px;overflow:hidden;background:#EFE7DD url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><circle cx='10' cy='10' r='1.5' fill='%23d9cfbf'/><circle cx='40' cy='35' r='1.2' fill='%23d9cfbf'/></svg>");display:flex;flex-direction:column;color:#111}
+.wa-ust{background:#0B5E4A;color:#fff;padding:38px 14px 12px;display:flex;align-items:center;gap:10px}
+.wa-ust img{width:36px;height:36px;border-radius:50%;background:#fff;padding:3px;object-fit:contain}
+.wa-ust b{font-size:15px;display:block}
+.wa-ust small{font-size:11.5px;opacity:.8}
+.akis{flex:1;padding:14px 10px;display:flex;flex-direction:column;gap:8px;justify-content:flex-end;overflow:hidden}
+.balon{max-width:84%;padding:7px 10px 18px;border-radius:12px;font-size:13px;line-height:1.38;position:relative;box-shadow:0 1px 1px rgba(0,0,0,.1);opacity:0;transform:translateY(12px) scale(.96);transition:all .45s cubic-bezier(.2,1.2,.4,1)}
+.balon.on{opacity:1;transform:none}
+.balon.biz{align-self:flex-end;background:#D9FDD3}
+.balon.o{align-self:flex-start;background:#fff}
+.balon .s{position:absolute;right:8px;bottom:3px;font-size:10px;color:#667}
+.onizle{background:#F0F2F0;border-radius:8px;overflow:hidden;margin:-1px -4px 6px;display:flex;gap:8px;align-items:center;padding:6px}
+.onizle img{width:52px;height:52px;object-fit:cover;border-radius:6px}
+.onizle b{font-size:12px;display:block;line-height:1.25}
+.onizle small{font-size:10.5px;color:#557}
+.wa-alt{background:#F0F0F0;padding:10px;display:flex;gap:8px;align-items:center}
+.wa-alt div{flex:1;background:#fff;border-radius:20px;padding:8px 14px;font-size:12.5px;color:#999}
+.wa-alt span{width:36px;height:36px;border-radius:50%;background:#0B8A5F;display:grid;place-items:center}
+.hizli{background:rgba(255,255,255,.05);border:1px solid rgba(237,233,214,.18);border-radius:26px;padding:28px}
+.hizli h3{font-family:Zodiak;font-weight:400;font-size:28px;color:#fff;margin-bottom:4px}
+.hizli p{font-size:14.5px;color:#B9C2AE;margin-bottom:18px}
+.hizli label{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#C9CFB9;margin:12px 0 6px;font-weight:600}
+.hizli input,.hizli select{width:100%;background:rgba(0,0,0,.18);border:1px solid rgba(237,233,214,.22);border-radius:12px;padding:12px 14px;color:#fff;font:inherit;font-size:15px}
+.hizli select option{color:#111}
+.hizli .iki{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.secenek{display:flex;gap:8px}
+.secenek label{flex:1;margin:0;text-transform:none;letter-spacing:0;font-size:14px;border:1px solid rgba(237,233,214,.22);border-radius:12px;padding:10px;text-align:center;cursor:pointer;color:#E8E6D6}
+.secenek input{display:none}
+.secenek input:checked+span{color:var(--yag)}
+.secenek label:has(input:checked){border-color:var(--yag);background:rgba(210,197,52,.08)}
+.hizli .btn{width:100%;justify-content:center;margin-top:20px;padding:16px}
+
+/* pusula */
+.pusula .g{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;background:var(--krem);border:1px solid var(--cizgi);border-radius:36px;padding:50px;position:relative;overflow:hidden}
+.pusula .gorsel{position:relative;height:460px;display:grid;place-items:center}
+.pusula .gorsel::before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,var(--renk,#cfd04a) 0%,transparent 68%);opacity:.45;transition:background .6s}
+.pusula .gorsel img{position:absolute;height:440px;width:auto;transition:opacity .6s,transform .6s}
+.pusula .gorsel img.gizli{opacity:0;transform:translateY(20px) scale(.95)}
+.pusula h3{font-family:Zodiak;font-weight:400;font-size:42px;line-height:1.05;color:var(--zeytin);margin:14px 0 8px}
+.kaydir{margin:30px 0 10px}
+.kaydir input{width:100%;-webkit-appearance:none;appearance:none;height:10px;border-radius:10px;background:linear-gradient(90deg,#8FA33A,#D2C534 50%,#D9A63A);outline:none}
+.kaydir input::-webkit-slider-thumb{-webkit-appearance:none;width:34px;height:34px;border-radius:50%;background:var(--zeytin);border:5px solid var(--krem);box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:grab}
+.kaydir input::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--zeytin);border:5px solid var(--krem);cursor:grab}
+.kaydir .uc{display:flex;justify-content:space-between;font-size:13px;color:var(--gri);margin-top:10px;font-weight:500}
+.tat{display:grid;gap:12px;margin:26px 0}
+.tat div{display:grid;grid-template-columns:110px 1fr 30px;align-items:center;gap:12px;font-size:14.5px}
+.tat i{height:8px;border-radius:8px;background:var(--kagit2);overflow:hidden;position:relative}
+.tat i::after{content:"";position:absolute;inset:0;width:var(--v);background:var(--zeytin2);border-radius:8px;transition:width .5s}
+.tat em{font-style:normal;color:var(--gri);font-size:13px}
+.oneri{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:22px;border-top:1px dashed var(--cizgi)}
+.oneri .ad{font-family:Zodiak;font-size:20px;color:var(--zeytin)}
+.oneri .f{font-weight:700;font-size:18px;margin-right:auto}
+
+/* mağaza */
+.filtre{display:flex;gap:8px;flex-wrap:wrap}
+.filtre button{padding:10px 18px;border-radius:999px;border:1.5px solid var(--cizgi);font-size:14.5px;font-weight:500;background:var(--krem);transition:all .2s}
+.filtre button.akt{background:var(--zeytin);color:var(--kagit);border-color:var(--zeytin)}
+.izgara{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.kart{background:var(--krem);border:1px solid var(--cizgi);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s;position:relative}
+.kart:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(33,64,42,.45)}
+.kart .foto{aspect-ratio:1;background:#fff;position:relative;overflow:hidden;cursor:pointer}
+.kart .foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kart:hover .foto img{transform:scale(1.06)}
+.kart .rozetk{position:absolute;left:12px;top:12px;background:var(--zeytin);color:var(--kagit);font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+.kart .rozetk.y{background:var(--yag);color:var(--zeytin)}
+.kart .ic{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.kart .kat{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--yaprak);font-weight:700}
+.kart h4{font-family:Zodiak;font-weight:400;font-size:19px;line-height:1.2;margin:6px 0 4px;cursor:pointer}
+.kart .alt{font-size:13.5px;color:var(--gri)}
+.kart .fiyat{margin-top:auto;padding-top:14px;display:flex;align-items:baseline;gap:8px}
+.kart .fiyat b{font-size:20px}
+.kart .fiyat s{color:#9a9a8a;font-size:14px}
+.kart .tus{display:grid;grid-template-columns:1fr;gap:7px;margin-top:14px}
+.kart .tus button,.kart .tus a{border-radius:12px;padding:11px 8px;font-size:13.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
+.kart .tus .ek{border:1.5px solid var(--zeytin);color:var(--zeytin)}
+.kart .tus .ek:hover{background:var(--zeytin);color:var(--kagit)}
+.kart .tus .wa{background:var(--wa);color:#05361a}
+.kart .tus .wa:hover{background:#2fe072}
+.kart .tus svg{width:17px;height:17px}
+
+/* kiler */
+.kiler{background:var(--kagit2)}
+.kiler .g{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+.kisiler{display:flex;gap:10px;margin:24px 0}
+.kisiler button{width:54px;height:54px;border-radius:16px;border:1.5px solid var(--cizgi);background:var(--krem);font-family:Zodiak;font-size:22px}
+.kisiler button.akt{background:var(--zeytin);color:var(--kagit);border-color:var(--zeytin)}
+.teneke-sira{display:flex;gap:10px;flex-wrap:wrap;min-height:120px;align-items:flex-end}
+.teneke{width:62px;height:96px;border-radius:6px 6px 4px 4px;background:linear-gradient(90deg,#d8d8d2,#fff 40%,#cfcfc8);border:1px solid #bdbdb3;position:relative;animation:dus .5s cubic-bezier(.3,1.5,.5,1) both}
+.teneke::before{content:"";position:absolute;left:8px;right:8px;top:18px;bottom:10px;background:var(--zeytin);border-radius:3px}
+.teneke::after{content:"5 L";position:absolute;left:0;right:0;top:44px;text-align:center;color:var(--yag);font-family:Zodiak;font-size:14px}
+@keyframes dus{from{transform:translateY(-40px);opacity:0}}
+.kiler-sonuc{background:var(--krem);border:1px solid var(--cizgi);border-radius:28px;padding:34px}
+.kiler-sonuc .buyuk{font-family:Zodiak;font-size:64px;line-height:1;color:var(--zeytin)}
+.kiler-sonuc p{color:var(--gri);font-size:15px;margin:8px 0 18px}
+
+/* analiz */
+.analiz .g{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.belge{background:#fff;border-radius:6px;padding:40px;box-shadow:0 40px 70px -40px rgba(0,0,0,.35);transform:rotate(-1.6deg);position:relative;font-size:14.5px}
+.belge::before{content:"";position:absolute;inset:10px;border:1px solid #e8e2d2;pointer-events:none}
+.belge .bt{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--murekkep);padding-bottom:14px;margin-bottom:12px}
+.belge .bt b{font-family:Zodiak;font-size:22px;font-weight:500}
+.belge .bt small{font-size:12px;color:var(--gri);text-align:right}
+.belge table{width:100%;border-collapse:collapse}
+.belge td{padding:12px 4px;border-bottom:1px dashed #ddd6c4}
+.belge td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.belge .muhur{position:absolute;right:-40px;bottom:-62px;width:120px;height:120px;border-radius:50%;border:3px solid var(--zeytin2);color:var(--zeytin2);display:grid;place-items:center;text-align:center;font-weight:800;font-size:11.5px;letter-spacing:.1em;transform:rotate(-14deg);background:rgba(244,239,227,.92);line-height:1.3}
+.not{font-size:13px;color:var(--gri);margin-top:18px}
+
+/* hikaye */
+.hikaye{position:relative;color:#fff;padding:0;overflow:hidden}
+.hikaye video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hikaye::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,36,22,.92),rgba(18,36,22,.55) 55%,rgba(18,36,22,.25))}
+.hikaye .w{position:relative;z-index:2;padding-top:110px;padding-bottom:110px}
+.hikaye h2{font-family:Zodiak;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1;max-width:640px;margin:16px 0 20px}
+.hikaye h2 .i{color:var(--yag)}
+.hikaye p{max-width:500px;color:#D6DCCB}
+.hikaye .etiket{color:var(--yag)}
+.adimlar{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:64px;border-top:1px solid rgba(255,255,255,.25)}
+.adimlar div{padding:22px 18px 0 0;position:relative}
+.adimlar div::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--yag)}
+.adimlar b{font-family:Zodiak;font-weight:400;font-size:21px;display:block}
+.adimlar span{font-size:14px;color:#C5CCB8}
+
+/* sss */
+.sss .g{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+details{border-bottom:1px solid var(--cizgi);padding:22px 0}
+summary{font-family:Zodiak;font-size:22px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;color:var(--zeytin)}
+summary::after{content:"+";font-family:Satoshi;font-size:26px;line-height:1;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--gri);max-width:640px}
+
+footer{background:var(--murekkep);color:#C9CDBF;padding:70px 0 120px;font-size:15px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h5{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+footer a{display:block;text-decoration:none;margin-bottom:8px;opacity:.8}
+footer .logo-f{background:var(--kagit);border-radius:18px;padding:14px;width:150px;margin-bottom:16px}
+.demo-not{margin-top:50px;padding-top:24px;border-top:1px solid #333;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;opacity:.75}
+
+/* yüzen wa */
+.yuzen{position:fixed;right:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:12px}
+.yuzen .ip{background:#fff;color:#111;padding:10px 16px;border-radius:14px;font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.3);font-weight:500;transition:opacity .4s,transform .4s}
+.yuzen .ip.gizli{opacity:0;transform:translateX(10px);pointer-events:none}
+.yuzen .ip i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--wa);margin-right:6px;animation:nabiz 1.6s infinite}
+.yuzen a{width:64px;height:64px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(18,140,74,.7);position:relative}
+.yuzen a::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:dalga 2.2s infinite}
+.yuzen a svg{width:32px;height:32px;color:#fff}
+@keyframes dalga{to{transform:scale(1.6);opacity:0}}
+@keyframes nabiz{50%{opacity:.3}}
+
+/* çekmece & modal */
+.perde{position:fixed;inset:0;background:rgba(20,28,18,.45);backdrop-filter:blur(3px);z-index:90;opacity:0;pointer-events:none;transition:opacity .3s}
+.perde.on{opacity:1;pointer-events:auto}
+.cekmece{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--kagit);z-index:100;transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.9,.2,1);display:flex;flex-direction:column}
+.cekmece.on{transform:none;visibility:visible;transition:transform .45s cubic-bezier(.2,.9,.2,1),visibility 0s}
+.cekmece:not(.on){visibility:hidden;transition:transform .45s cubic-bezier(.2,.9,.2,1),visibility 0s .45s}
+.ck-ust{padding:24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--cizgi)}
+.ck-ust h3{font-family:Zodiak;font-weight:400;font-size:26px}
+.kapat{width:40px;height:40px;border-radius:50%;border:1px solid var(--cizgi);font-size:20px}
+.kargo{padding:16px 24px;background:var(--krem);font-size:14px;border-bottom:1px solid var(--cizgi)}
+.kargo .bar{height:7px;background:var(--kagit2);border-radius:7px;margin-top:8px;overflow:hidden}
+.kargo .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--yaprak),var(--yag));border-radius:7px;transition:width .5s}
+.ck-liste{flex:1;overflow:auto;padding:10px 24px}
+.satir{display:grid;grid-template-columns:72px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--cizgi);align-items:center}
+.satir img{width:72px;height:72px;border-radius:12px;object-fit:cover;background:#fff}
+.satir b{font-size:14.5px;line-height:1.3;display:block;font-weight:600}
+.adet{display:inline-flex;align-items:center;border:1px solid var(--cizgi);border-radius:999px;margin-top:6px}
+.adet button{width:30px;height:30px;font-size:16px}
+.adet span{min-width:22px;text-align:center;font-size:14px;font-weight:600}
+.bos{text-align:center;padding:60px 10px;color:var(--gri)}
+.ck-alt{padding:20px 24px 24px;border-top:1px solid var(--cizgi);background:var(--krem)}
+.ck-alt .top{display:flex;justify-content:space-between;font-size:18px;font-weight:700;margin-bottom:14px}
+.ck-alt .btn{width:100%;justify-content:center;margin-top:8px;padding:15px}
+.ck-alt small{display:block;text-align:center;color:var(--gri);font-size:12.5px;margin-top:10px}
+.modal{position:fixed;left:50%;top:50%;width:min(940px,94vw);max-height:90vh;overflow:auto;background:var(--kagit);border-radius:30px;z-index:100;display:grid;grid-template-columns:1fr 1fr;transform:translate(-50%,-46%) scale(.96);opacity:0;pointer-events:none;transition:all .35s}
+.modal.on{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+.modal .mf{background:#fff}
+.modal .mf img{width:100%;height:100%;object-fit:cover}
+.modal .mi{padding:40px;position:relative}
+.modal .mi .kapat{position:absolute;right:18px;top:18px}
+.modal h3{font-family:Zodiak;font-weight:400;font-size:30px;line-height:1.1;margin:10px 0 12px;color:var(--zeytin)}
+.modal .acik{color:var(--gri);font-size:15px}
+.modal .mfiyat{font-size:28px;font-weight:700;margin:20px 0 4px}
+.modal .mfiyat s{font-size:17px;color:#999;font-weight:400;margin-left:8px}
+.modal .tuslar{display:grid;gap:10px;margin-top:20px}
+.modal .tuslar .btn{justify-content:center;padding:16px}
+.modal ul{list-style:none;margin-top:18px;font-size:14px;color:var(--gri);display:grid;gap:6px}
+.modal ul li::before{content:"✓ ";color:var(--zeytin2);font-weight:700}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,120px);background:var(--murekkep);color:#fff;padding:14px 22px;border-radius:14px;z-index:120;font-size:15px;transition:transform .4s cubic-bezier(.2,1.3,.4,1);display:flex;gap:10px;align-items:center}
+.toast.on{transform:translate(-50%,0)}
+.mobil-bar{display:none}
+
+.goster{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s}
+.goster.on{opacity:1;transform:none}
+
+@media (max-width:1050px){
+  .hd nav{display:none}
+  .hero .g,.pusula .g,.kiler .g,.analiz .g,.sss .g{grid-template-columns:1fr}
+  .sahne{justify-self:center}
+  .hat .g{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .tel{max-width:330px;margin:0 auto}
+  .izgara{grid-template-columns:repeat(2,1fr)}
+  .olcu{grid-template-columns:repeat(2,1fr)}
+  .olcu div:nth-child(2){border-right:0}
+  .olcu div:nth-child(-n+2){border-bottom:1px solid var(--cizgi)}
+  .adimlar{grid-template-columns:repeat(2,1fr);gap:24px 0}
+  footer .g{grid-template-columns:1fr 1fr}
+  .modal{grid-template-columns:1fr}
+  .modal .mf{max-height:340px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .w{padding:0 16px}
+  .hd{height:66px;gap:10px}
+  .hd .logo img{height:46px}
+  .hd .sag .btn-wa{display:none}
+  section{padding:70px 0}
+  .hero{padding-top:34px}
+  .pusula .g{padding:26px}
+  .pusula .gorsel{height:320px}
+  .pusula .gorsel img{height:310px}
+  .pusula h3{font-size:32px}
+  .izgara{gap:12px}
+  .kart{border-radius:18px}
+  .kart .ic{padding:12px}
+  .kart h4{font-size:16px}
+  .kart .alt{display:none}
+  .kart .tus .uz{display:none}
+  .kart .tus button,.kart .tus a{font-size:12.5px;padding:10px 4px}
+  .belge{padding:26px;transform:none}
+  .belge .muhur{right:-6px;width:96px;height:96px;font-size:9.5px}
+  .hikaye .w{padding-top:80px;padding-bottom:80px}
+  footer .g{grid-template-columns:1fr}
+  .yuzen{display:none}
+  .mobil-bar{display:grid;grid-template-columns:1fr auto;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,227,.95);backdrop-filter:blur(10px);border-top:1px solid var(--cizgi)}
+  .mobil-bar .btn{justify-content:center}
+  .rozet{width:96px;height:96px}.rozet b{font-size:24px}
+  .modal .mi{padding:26px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="ust"><div class="bant" id="bant"></div></div>
+
+<header>
+  <div class="w hd">
+    <a href="#" class="logo" aria-label="Ülgen Oliva ana sayfa"><img src="img/logo.png" alt="Ülgen Oliva"></a>
+    <nav>
+      <a href="#magaza">Mağaza</a>
+      <a href="#pusula">Hasat Pusulası</a>
+      <a href="#hat">Sipariş Hattı</a>
+      <a href="#analiz">Analiz</a>
+      <a href="#hikaye">Bahçemiz</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <div class="sag">
+      <a class="btn btn-wa" data-wa="genel" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Sipariş Hattı</a>
+      <button class="sepet-btn" id="sepetAc" aria-label="Sepet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" id="sepetN">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="w">
+    <div class="g">
+      <div class="goster">
+        <span class="etiket">Manisa Muradiye · Yeni hasat</span>
+        <h1>Bahçeden <span class="i">şişeye,</span><br>şişeden sofranıza.</h1>
+        <p class="lead">Kendi zeytinliklerimizden toplanan zeytinler taş değirmende ezilir, soğuk sıkımla yağa dönüşür. Siparişinizi ister sepetle, ister tek mesajla WhatsApp'tan verin.</p>
+        <div class="cta">
+          <a class="btn btn-wa" data-wa="genel" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg><span class="uz">WhatsApp'tan </span>Sipariş Ver</a>
+          <a class="btn btn-c" href="#magaza">Ürünleri İncele →</a>
+        </div>
+        <div class="guven">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>1.500 TL üzeri ücretsiz kargo</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>Kapıda ödeme</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6v4l4 12H5L9 7z"/></svg>Laboratuvar analizli</span>
+        </div>
+      </div>
+      <div class="sahne goster">
+        <svg class="halka" viewBox="0 0 500 500"><defs><path id="yol" d="M250,250 m-232,0 a232,232 0 1,1 464,0 a232,232 0 1,1 -464,0"/></defs><text><textPath href="#yol">TAŞ BASKI · SOĞUK SIKIM · ERKEN HASAT · MANİSA MURADİYE · TAŞ BASKI · SOĞUK SIKIM · ERKEN HASAT ·</textPath></text></svg>
+        <div class="daire"><video src="img/akis.mp4" poster="img/akis.jpg" autoplay muted loop playsinline></video></div>
+        <img class="sise" src="img/erken-sise.png" alt="Ülgen Oliva erken hasat taş baskı zeytinyağı 1 L">
+        <div class="rozet"><div><small>polifenol</small><b>486</b><small>mg/kg</small></div></div>
+      </div>
+    </div>
+    <div class="olcu goster">
+      <div><b data-say="0.3" data-ond="1">0</b><span>% serbest asitlik*</span></div>
+      <div><b data-say="486">0</b><span>mg/kg toplam polifenol*</span></div>
+      <div><b>&lt;27°</b><span>soğuk sıkım sıcaklığı</span></div>
+      <div><b data-say="5">0</b><span>L teneke · 1 L cam · 500 ml</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SİPARİŞ HATTI -->
+<section class="hat" id="hat">
+  <div class="w">
+    <div class="bas goster">
+      <div><span class="etiket">WhatsApp sipariş hattı</span><h2>Siparişin en kısa yolu: <span class="i">tek mesaj.</span></h2></div>
+      <p>Hangi ürünün altındaki WhatsApp butonuna basarsanız, o ürünün adı, fiyatı ve linki mesaja hazır yazılır. Siz sadece “gönder”e basarsınız.</p>
+    </div>
+    <div class="g">
+      <div class="yol">
+        <div class="k akt" data-adim="0"><span class="no">01</span><h3>Ürünü seçin</h3><p>Ürün kartındaki <b>WhatsApp'tan sipariş</b> butonuna dokunun.</p></div>
+        <div class="k" data-adim="1"><span class="no">02</span><h3>Mesaj hazır gelir</h3><p>Ürün adı, adet, fiyat ve ürün linki otomatik yazılır.</p></div>
+        <div class="k" data-adim="2"><span class="no">03</span><h3>Onay ve kargo</h3><p>Adresinizi yazın; kapıda ödeme ya da havale ile siparişiniz yola çıksın.</p></div>
+      </div>
+      <div class="tel goster">
+        <div class="ekran">
+          <div class="wa-ust"><img src="img/logo.png" alt=""><div><b>Ülgen Oliva</b><small>Sipariş hattı · çevrimiçi</small></div></div>
+          <div class="akis" id="akis"></div>
+          <div class="wa-alt"><div>Mesaj yazın</div><span><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M3 20l18-8L3 4v6l12 2-12 2z"/></svg></span></div>
+        </div>
+      </div>
+      <form class="hizli goster" id="hizliForm">
+        <h3>Hızlı sipariş formu</h3>
+        <p>Formu doldurun, siparişiniz WhatsApp mesajı olarak hazırlansın.</p>
+        <label for="hAd">Ad Soyad</label><input id="hAd" required placeholder="Adınız Soyadınız">
+        <div class="iki">
+          <div><label for="hIl">İl / İlçe</label><input id="hIl" required placeholder="İstanbul / Kadıköy"></div>
+          <div><label for="hAdet">Adet</label><input id="hAdet" type="number" min="1" value="1"></div>
+        </div>
+        <label for="hUrun">Ürün</label><select id="hUrun"></select>
+        <label>Ödeme</label>
+        <div class="secenek">
+          <label><input type="radio" name="odeme" value="Kapıda ödeme" checked><span>Kapıda ödeme</span></label>
+          <label><input type="radio" name="odeme" value="Havale / EFT"><span>Havale / EFT</span></label>
+        </div>
+        <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Siparişi WhatsApp'a Gönder</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- HASAT PUSULASI -->
+<section class="pusula" id="pusula">
+  <div class="w">
+    <div class="g goster">
+      <div class="gorsel" id="pGorsel">
+        <img id="pOlgun" src="img/olgun-sise.png" alt="Olgun hasat natürel sızma zeytinyağı" class="gizli">
+        <img id="pErken" src="img/erken-sise.png" alt="Erken hasat taş baskı zeytinyağı">
+      </div>
+      <div>
+        <span class="etiket">Hasat Pusulası</span>
+        <h3>Erken mi, olgun mu? <span class="i" style="color:var(--altin)">Damağınız seçsin.</span></h3>
+        <p style="color:var(--gri)">Kaydırıcıyı damak zevkinize göre çekin; size uygun yağı ve tat profilini gösterelim.</p>
+        <div class="kaydir">
+          <input type="range" id="pKay" min="0" max="100" value="78" aria-label="Damak zevki">
+          <div class="uc"><span>Yumuşak, dengeli</span><span>Yoğun, meyvemsi, acımsı</span></div>
+        </div>
+        <div class="tat" id="pTat"></div>
+        <div class="oneri"><span class="ad" id="pAd"></span><span class="f" id="pFiyat"></span>
+          <button class="btn btn-k" id="pEkle">Sepete Ekle</button>
+          <a class="btn btn-wa" id="pWa" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAĞAZA -->
+<section id="magaza" style="padding-top:20px">
+  <div class="w">
+    <div class="bas goster">
+      <div><span class="etiket">Mağaza</span><h2>Kilerin <span class="i">en güzel</span> rafı.</h2></div>
+      <div class="filtre" id="filtre"></div>
+    </div>
+    <div class="izgara" id="izgara"></div>
+  </div>
+</section>
+
+<!-- KİLER HESABI -->
+<section class="kiler">
+  <div class="w g">
+    <div class="goster">
+      <span class="etiket">Kilerini planla</span>
+      <div class="bas" style="margin:0"><h2>Bir yıl yetecek yağ <span class="i">ne kadar?</span></h2></div>
+      <p style="color:var(--gri);margin-top:14px">Hanenizde kaç kişi var? Yıllık zeytinyağı ihtiyacınızı tahmini olarak hesaplayıp size en uygun paketi önerelim.</p>
+      <div class="kisiler" id="kisiler"></div>
+      <div class="teneke-sira" id="tenekeler"></div>
+    </div>
+    <div class="kiler-sonuc goster">
+      <span class="etiket">Tahmini yıllık ihtiyaç</span>
+      <div class="buyuk" id="kLitre">20 L</div>
+      <p id="kAcik"></p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-k" id="kEkle">Önerilen paketi sepete ekle</button>
+        <a class="btn btn-wa" id="kWa" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Toplu fiyat sor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANALİZ -->
+<section class="analiz" id="analiz">
+  <div class="w g">
+    <div class="goster">
+      <span class="etiket">Şeffaf üretim</span>
+      <div class="bas" style="margin:0 0 18px"><h2>Sözümüzü <span class="i">rakamla</span> veriyoruz.</h2></div>
+      <p style="color:var(--gri)">Her hasat bağımsız laboratuvarda analiz edilir. Raporun tamamını WhatsApp hattımızdan isteyebilirsiniz.</p>
+      <div style="margin-top:26px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-wa" data-wa="rapor" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Analiz raporunu iste</a>
+      </div>
+      <p class="not">* Değerler 07.11.2025 tarihli laboratuvar analiz raporundan alınmıştır; her hasatta güncellenir.</p>
+    </div>
+    <div class="belge goster">
+      <div class="bt"><b>Analiz Özeti</b><small>Rapor tarihi<br>07.11.2025</small></div>
+      <table>
+        <tr><td>Serbest yağ asitliği (oleik asit)</td><td>%0,3</td></tr>
+        <tr><td>Peroksit değeri</td><td>3,59 meq O₂/kg</td></tr>
+        <tr><td>Toplam polifenol</td><td>486 mg/kg</td></tr>
+        <tr><td>Pestisit kalıntısı</td><td>Tespit edilmedi</td></tr>
+        <tr><td>Sınıf</td><td>Natürel sızma</td></tr>
+      </table>
+      <div class="muhur">LABORATUVAR<br>ANALİZLİ<br>2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- HİKAYE -->
+<section class="hikaye" id="hikaye">
+  <video src="img/bahce.mp4" poster="img/bahce.jpg" autoplay muted loop playsinline></video>
+  <div class="w">
+    <span class="etiket">Bahçemiz</span>
+    <h2>Nesilden nesile <span class="i">aynı bahçe,</span> aynı özen.</h2>
+    <p>Manisa Muradiye'deki zeytinliklerimizde hasat elle yapılır; zeytin, toplandığı gün sıkıma gider.</p>
+    <div class="adimlar">
+      <div><b>Hasat</b><span>Dalından elle toplama</span></div>
+      <div><b>Taş değirmen</b><span>Zeytin taşla ezilir</span></div>
+      <div><b>Soğuk sıkım</b><span>27°C altında</span></div>
+      <div><b>Dinlendirme</b><span>Tortusu doğal çöker</span></div>
+      <div><b>Kapınızda</b><span>Cam şişe ya da teneke</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SSS -->
+<section class="sss" id="sss">
+  <div class="w g">
+    <div class="goster"><span class="etiket">Sık sorulanlar</span><div class="bas" style="margin:0"><h2>Aklınıza <span class="i">takılan</span> her şey.</h2></div>
+      <a class="btn btn-wa" data-wa="soru" href="#" style="margin-top:26px"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Bize sorun</a></div>
+    <div class="goster">
+      <details open><summary>5 litrelik teneke fiyatı ne kadar?</summary><p>Erken hasat taş baskı 5 L teneke 2.860 TL, olgun hasat natürel sızma 5 L teneke 2.680 TL. Çoklu teneke paketlerinde hediye ürünler ve ücretsiz kargo var.</p></details>
+      <details><summary>Kargo ne zaman çıkar, ücreti var mı?</summary><p>Siparişler 1–3 iş günü içinde kargoya verilir. 1.500 TL ve üzeri siparişlerde kargo ücretsizdir.</p></details>
+      <details><summary>Kapıda ödeme yapabilir miyim?</summary><p>Evet. Sepette ya da WhatsApp siparişinde “kapıda ödeme” seçebilirsiniz. Havale/EFT ve kartla ödeme de mümkündür.</p></details>
+      <details><summary>Erken hasat ile olgun hasat arasındaki fark nedir?</summary><p>Erken hasat, zeytin henüz yeşilken toplanır; daha yoğun, meyvemsi ve hafif acımsı bir tadı vardır. Olgun hasat daha yumuşak ve dengelidir, günlük kullanıma uygundur.</p></details>
+      <details><summary>Toptan ya da kurumsal sipariş veriyor musunuz?</summary><p>Restoran, kafe ve kurumsal hediye siparişleri için WhatsApp hattımızdan toplu fiyat isteyebilirsiniz.</p></details>
+      <details><summary>Zeytinyağını nasıl saklamalıyım?</summary><p>Serin, karanlık bir yerde ve ağzı kapalı saklayın. Tenekeden günlük kullanım için koyu renkli cam şişeye aktarmanız tavsiye edilir.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="w">
+    <div class="g">
+      <div><div class="logo-f"><img src="img/logo.png" alt="Ülgen Oliva"></div><p>Manisa Muradiye'deki bahçelerimizden taş baskı zeytinyağı, zeytin ve doğal ürünler.</p></div>
+      <div><h5>Mağaza</h5><a href="#magaza">Zeytinyağları</a><a href="#magaza">Paketler</a><a href="#magaza">Zeytin</a><a href="#magaza">Pekmez & Tahin</a></div>
+      <div><h5>Yardım</h5><a href="#sss">Kargo & teslimat</a><a href="#sss">Kapıda ödeme</a><a href="#analiz">Analiz raporu</a><a href="#hat">Sipariş hattı</a></div>
+      <div><h5>İletişim</h5><a data-wa="genel" href="#">WhatsApp: 0531 900 64 39</a><a href="https://www.instagram.com/ulgenoliva/" target="_blank" rel="noopener">Instagram @ulgenoliva</a><a href="#">Muradiye / Manisa</a></div>
+    </div>
+    <div class="demo-not"><span>© 2026 Ülgen Oliva</span><span>Bu sayfa Sadece Medya tarafından hazırlanmış örnek tasarımdır · www.sadecemedya.com</span></div>
+  </div>
+</footer>
+
+<div class="yuzen"><span class="ip" id="ip"><i></i>Sipariş hattı açık, yazın!</span><a data-wa="genel" href="#" aria-label="WhatsApp sipariş hattı"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg></a></div>
+<div class="mobil-bar"><a class="btn btn-wa" data-wa="genel" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>WhatsApp Sipariş</a><button class="btn btn-k" id="mSepet">Sepet (<span id="mN">0</span>)</button></div>
+
+<div class="perde" id="perde"></div>
+<aside class="cekmece" id="cekmece" aria-label="Sepet">
+  <div class="ck-ust"><h3>Sepetiniz</h3><button class="kapat" data-kapat>×</button></div>
+  <div class="kargo" id="kargo"></div>
+  <div class="ck-liste" id="ckListe"></div>
+  <div class="ck-alt">
+    <div class="top"><span>Toplam</span><span id="ckTop">0 TL</span></div>
+    <a class="btn btn-wa" id="ckWa" href="#"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Siparişi WhatsApp ile Tamamla</a>
+    <button class="btn btn-k" id="ckOde">Kartla / Kapıda Ödeme ile Öde</button>
+    <small>WhatsApp mesajına ürünler, adetler ve ürün linkleri otomatik eklenir.</small>
+  </div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast"></div>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="ikon-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.07c-.24.68-1.42 1.3-1.95 1.34-.5.04-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.83s.7-2.01.96-2.29c.24-.27.53-.34.71-.34l.51.01c.16 0 .39-.06.6.46.24.56.79 1.93.86 2.07.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35Z"/></symbol></svg>
+
+<script>
+const WA = "905319006439";
+const SITE = "https://ulgenoliva.com";
+const ESIK = 1500;
+const U = [
+ {h:"erken-hasat-tas-baski-zeytinyagi-1-l",img:"erken-1l",kat:"yag",ad:"Erken Hasat Taş Baskı Zeytinyağı",alt:"1 L kulplu cam şişe",f:710,r:"Çok satan",y:1,acik:"Zeytin henüz yeşilken toplanır, taş değirmende ezilir ve 27°C'nin altında soğuk sıkılır. Filtresiz ve katkısız; aroması taze, meyvemsi ve hafif acımsıdır."},
+ {h:"erken-hasat-tas-baski-zeytinyagi-5-l",img:"erken-5l",kat:"yag",ad:"Erken Hasat Taş Baskı Zeytinyağı",alt:"5 L teneke",f:2860,acik:"Kilerin yıldızı: erken hasat taş baskı zeytinyağı, ekonomik 5 litrelik tenekede."},
+ {h:"olgun-hasat-naturel-sizma-zeytinyagi-1-l",img:"olgun-1l",kat:"yag",ad:"Olgun Hasat Natürel Sızma",alt:"1 L cam şişe",f:690,acik:"Olgunlaşmış zeytinlerden soğuk sıkımla elde edilir. Yumuşak içimi ve dengeli aromasıyla günlük sofraya uygundur."},
+ {h:"olgun-hasat-naturel-sizma-zeytinyagi-5-l",img:"olgun-5l",kat:"yag",ad:"Olgun Hasat Natürel Sızma",alt:"5 L teneke",f:2680,acik:"Günlük kullanımın ekonomik hâli: olgun hasat natürel sızma zeytinyağı, 5 L teneke."},
+ {h:"olgun-hasat-naturel-sizma-zeytinyagi-500-ml",img:"olgun-500",kat:"yag",ad:"Olgun Hasat Natürel Sızma",alt:"500 ml cam şişe",f:490,acik:"Denemek ya da hediye etmek için 500 ml cam şişe."},
+ {h:"avantaj-paketi",img:"avantaj-paketi",kat:"paket",ad:"Gold Avantaj Paketi",alt:"5 L erken hasat + siyah zeytin + tahin + üzüm pekmezi",f:3199,e:4399,r:"Kampanya",acik:"5 L erken hasat taş baskı zeytinyağı, siyah Gemlik yağlı sele zeytin, odun ateşinde kavrulmuş tahin ve kuru üzüm pekmezi. Ücretsiz kargo."},
+ {h:"5-al-1-ode-erken-hasat-tas-baski",img:"5x1l-erken",kat:"paket",ad:"5 × 1 L Erken Hasat Taş Baskı",alt:"+ hediye siyah sele zeytin",f:3499,r:"Hediyeli",acik:"5 adet 1 L kulplu cam şişe erken hasat taş baskı zeytinyağı ve hediye XL siyah sele zeytin. Ücretsiz kargo."},
+ {h:"olgun-hasat-5x1l-kampanya",img:"5x1l-olgun",kat:"paket",ad:"5 × 1 L Olgun Hasat",alt:"+ 1 kg yeşil kırma zeytin hediye",f:3299,r:"Hediyeli",acik:"5 adet 1 L cam şişe olgun hasat natürel sızma zeytinyağı ve 1 kg yeşil kırma zeytin hediye. Ücretsiz kargo."},
+ {h:"2x5l-erken-hasat-tas-baski-hediyeli",img:"2x5l-erken",kat:"paket",ad:"2 × 5 L Erken Hasat",alt:"+ 1 kg bal ve nar ekşisi hediye",f:4899,acik:"2 adet 5 L erken hasat taş baskı zeytinyağı, 1 kg bal ve 500 ml nar ekşisi hediye. Ücretsiz kargo."},
+ {h:"2x5l-olgun-hasat-hediyeli",img:"2x5l-olgun",kat:"paket",ad:"2 × 5 L Olgun Hasat",alt:"+ nar ekşisi ve karadut özü hediye",f:4699,acik:"2 adet 5 L olgun hasat natürel sızma zeytinyağı, nar ekşisi ve karadut özü hediye. Ücretsiz kargo."},
+ {h:"4x5l-erken-hasat-tas-baski-paketi",img:"4x5l-erken",kat:"paket",ad:"4 × 5 L Erken Hasat Yıllık Paket",alt:"+ pekmez, tahin, siyah zeytin",f:8999,r:"Yıllık kiler",acik:"4 adet 5 L erken hasat taş baskı zeytinyağı, 1 kg kara üzüm pekmezi, 1 kg tahin ve 1 kg XL siyah sele zeytin."},
+ {h:"dev-kampanya-4x5l-olgun-hasat",img:"4x5l-olgun",kat:"paket",ad:"4 × 5 L Olgun Hasat Yıllık Paket",alt:"+ nar ekşisi, XL yeşil kırma zeytin",f:7899,acik:"4 adet 5 L olgun hasat natürel sızma zeytinyağı, nar ekşisi ve XL yeşil kırma zeytin."},
+ {h:"ilacsiz-yagli-sele-siyah-zeytin-1-kg",img:"sele-siyah",kat:"zeytin",ad:"Yağlı Sele Siyah Zeytin",alt:"1 kg · 230/260 kalibre",f:389,acik:"Siyah zeytini yağlı sele usulünde sevenlere. İlaçsız ve doğal yöntemlerle hazırlanır."},
+ {h:"ilacsiz-yesil-kirma-zeytin-xl-1-kg",img:"yesil-kirma",kat:"zeytin",ad:"XL Yeşil Kırma Zeytin",alt:"1 kg · 140/160 kalibre",f:340,acik:"İri boy kırma yeşil zeytin; kahvaltı tabağının en dolgun köşesi."},
+ {h:"ilacsiz-yaban-mersinli-yesil-zeytin-1-kg",img:"yaban-mersinli",kat:"zeytin",ad:"Yaban Mersinli Yeşil Zeytin",alt:"1 kg",f:365,r:"Yeni",y:1,acik:"Yeşil zeytinle yaban mersini aynı kavanozda; alışılmışın dışında bir tat."},
+ {h:"odun-atesinde-kavrulmus-susam-tahini-1-kg",img:"tahin",kat:"kiler",ad:"Odun Ateşinde Kavrulmuş Tahin",alt:"1 kg",f:380,acik:"Yerli susam odun ateşinde kavrulur, taş değirmende çekilir."},
+ {h:"sekersiz-aladag-kuru-uzum-pekmezi-1-l",img:"uzum-pekmezi",kat:"kiler",ad:"Şekersiz Aladağ Üzüm Pekmezi",alt:"1 L",f:340,acik:"Aladağ kuru üzümünden, şeker ilavesiz hazırlanan pekmez."},
+ {h:"karadut-pekmezi-1-kg",img:"karadut-pekmezi",kat:"kiler",ad:"Karadut Pekmezi",alt:"1 kg cam kavanoz",f:420,acik:"Yoğun, koyu bir tat; kahvaltı ve tatlı sofralarına."},
+ {h:"naturel-nar-eksisi-1-l",img:"nar-eksisi",kat:"kiler",ad:"%100 Natürel Nar Ekşisi",alt:"1 L",f:340,acik:"Doğrudan nardan; salata ve soslar için."},
+ {h:"nar-sirkesi-500-ml",img:"nar-sirkesi",kat:"kiler",ad:"Nar Sirkesi",alt:"500 ml cam şişe",f:380,acik:"Doğal fermente nar sirkesi."},
+];
+const KAT = {hepsi:"Tümü",yag:"Zeytinyağı",paket:"Paketler",zeytin:"Zeytin",kiler:"Pekmez · Tahin · Sirke"};
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const tl = n => n.toLocaleString("tr-TR") + " TL";
+const bul = h => U.find(u => u.h === h);
+const link = u => `${SITE}/products/${u.h}`;
+const waUrl = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const urunMesaj = (u, adet = 1) =>
+`Merhaba Ülgen Oliva 👋 Bu ürünü sipariş etmek istiyorum:
+
+🫒 ${u.ad} – ${u.alt}
+Adet: ${adet}
+Fiyat: ${tl(u.f * adet)}
+🔗 ${link(u)}
+
+Ad Soyad:
+Adres:
+Ödeme: Kapıda ödeme / Havale`;
+const HAZIR = {
+  genel: "Merhaba Ülgen Oliva 👋 Sipariş vermek istiyorum.",
+  rapor: "Merhaba, zeytinyağınızın laboratuvar analiz raporunu görebilir miyim?",
+  soru: "Merhaba Ülgen Oliva, bir sorum var:"
+};
+function waAc(t){ window.open(waUrl(t), "_blank", "noopener"); }
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-wa]");
+  if (a){ e.preventDefault(); waAc(HAZIR[a.dataset.wa] || HAZIR.genel); }
+});
+
+/* bant */
+const bantMetin = ["<b>Yeni hasat</b> erken hasat taş baskı tenekeleri hazır","<b>1.500 TL</b> üzeri ücretsiz kargo","<b>WhatsApp sipariş hattı</b> 0531 900 64 39","<b>Kapıda ödeme</b> imkânı","<b>Laboratuvar analizli</b> · %0,3 asitlik"];
+$("#bant").innerHTML = [...bantMetin, ...bantMetin, ...bantMetin, ...bantMetin].map(t => `<span>${t}</span>`).join("<span>✦</span>");
+
+/* mağaza */
+let filtre = "hepsi";
+$("#filtre").innerHTML = Object.entries(KAT).map(([k,v]) => `<button data-f="${k}" class="${k===filtre?'akt':''}">${v}</button>`).join("");
+$("#filtre").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; filtre = b.dataset.f; $$("#filtre button").forEach(x => x.classList.toggle("akt", x===b)); ciz(); });
+function ciz(){
+  $("#izgara").innerHTML = U.filter(u => filtre==="hepsi" || u.kat===filtre).map(u => `
+  <article class="kart">
+    <div class="foto" data-ac="${u.h}"><img loading="lazy" src="img/${u.img}.jpg" alt="${u.ad} ${u.alt}">${u.r?`<span class="rozetk ${u.y?'y':''}">${u.r}</span>`:""}</div>
+    <div class="ic">
+      <span class="kat">${KAT[u.kat]}</span>
+      <h4 data-ac="${u.h}">${u.ad}</h4>
+      <span class="alt">${u.alt}</span>
+      <div class="fiyat"><b>${tl(u.f)}</b>${u.e?`<s>${tl(u.e)}</s>`:""}</div>
+      <div class="tus">
+        <a class="wa" href="${waUrl(urunMesaj(u))}" target="_blank" rel="noopener" data-urunwa="${u.h}"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg><span class="uz">WhatsApp'tan </span>Sipariş Ver</a>
+        <button class="ek" data-ekle="${u.h}">Sepete Ekle</button>
+      </div>
+    </div>
+  </article>`).join("");
+}
+ciz();
+document.addEventListener("click", e => {
+  const ek = e.target.closest("[data-ekle]"); if (ek){ ekle(ek.dataset.ekle, +(ek.dataset.adet||1)); return; }
+  const ac = e.target.closest("[data-ac]"); if (ac){ urunAc(ac.dataset.ac); }
+});
+
+/* sepet */
+let sepet = {};
+try { sepet = JSON.parse(localStorage.getItem("uo-sepet")) || {}; } catch(_) {}
+const kaydet = () => { try { localStorage.setItem("uo-sepet", JSON.stringify(sepet)); } catch(_) {} };
+const toplam = () => Object.entries(sepet).reduce((s,[h,a]) => s + (bul(h)?.f||0)*a, 0);
+const adetT = () => Object.values(sepet).reduce((a,b)=>a+b,0);
+function ekle(h, n=1){
+  sepet[h] = (sepet[h]||0) + n; kaydet(); sepetCiz();
+  const b = $("#sepetAc"); b.classList.remove("zipla"); void b.offsetWidth; b.classList.add("zipla");
+  toast(`✓ ${bul(h).ad} sepete eklendi`);
+}
+function sepetCiz(){
+  const n = adetT(), t = toplam();
+  $("#sepetN").textContent = n; $("#sepetN").classList.toggle("on", n>0); $("#mN").textContent = n;
+  const kal = ESIK - t;
+  $("#kargo").innerHTML = (kal > 0 ? `Ücretsiz kargo için <b>${tl(kal)}</b> daha ekleyin` : `🎉 <b>Kargonuz ücretsiz!</b>`) + `<div class="bar"><i style="width:${Math.min(100, t/ESIK*100)}%"></i></div>`;
+  $("#ckListe").innerHTML = n ? Object.entries(sepet).map(([h,a]) => { const u = bul(h); return `
+    <div class="satir"><img src="img/${u.img}.jpg" alt=""><div><b>${u.ad}</b><small style="color:var(--gri)">${u.alt}</small><br>
+    <span class="adet"><button data-az="${h}">−</button><span>${a}</span><button data-ar="${h}">+</button></span></div><b>${tl(u.f*a)}</b></div>`; }).join("")
+    : `<div class="bos"><p style="font-family:Zodiak;font-size:22px;color:var(--zeytin)">Sepetiniz boş</p><p>Ürünleri inceleyin ya da doğrudan WhatsApp'tan yazın.</p></div>`;
+  $("#ckTop").textContent = tl(t);
+  $("#ckWa").href = n ? waUrl(sepetMesaj()) : waUrl(HAZIR.genel);
+}
+function sepetMesaj(){
+  const sat = Object.entries(sepet).map(([h,a]) => { const u = bul(h); return `• ${a} × ${u.ad} (${u.alt}) – ${tl(u.f*a)}\n  ${link(u)}`; }).join("\n");
+  const t = toplam();
+  return `Merhaba Ülgen Oliva 👋 Sepetimdeki ürünleri sipariş etmek istiyorum:\n\n${sat}\n\nToplam: ${tl(t)}\nKargo: ${t>=ESIK?"Ücretsiz":"Alıcıya ait"}\n\nAd Soyad:\nAdres:\nÖdeme: Kapıda ödeme / Havale`;
+}
+$("#ckListe").addEventListener("click", e => {
+  const az = e.target.closest("[data-az]"), ar = e.target.closest("[data-ar]");
+  if (ar) sepet[ar.dataset.ar]++;
+  if (az){ const h = az.dataset.az; if (--sepet[h] <= 0) delete sepet[h]; }
+  if (az||ar){ kaydet(); sepetCiz(); }
+});
+const perde = $("#perde");
+function cekmece(ac){ $("#cekmece").classList.toggle("on", ac); perde.classList.toggle("on", ac || $("#modal").classList.contains("on")); }
+$("#sepetAc").onclick = () => cekmece(true);
+$("#mSepet").onclick = () => cekmece(true);
+$("#ckWa").addEventListener("click", e => { if (adetT()) { e.preventDefault(); waAc(sepetMesaj()); } else { e.preventDefault(); waAc(HAZIR.genel); } });
+$("#ckOde").onclick = () => toast(adetT() ? "Demo: burada güvenli ödeme sayfası (kart / kapıda ödeme) açılır." : "Önce sepete ürün ekleyin.");
+perde.onclick = () => { cekmece(false); modalKapat(); };
+document.addEventListener("click", e => { if (e.target.closest("[data-kapat]")) { cekmece(false); modalKapat(); } });
+document.addEventListener("keydown", e => { if (e.key==="Escape"){ cekmece(false); modalKapat(); } });
+sepetCiz();
+
+/* ürün modalı */
+function urunAc(h){
+  const u = bul(h); if (!u) return;
+  let adet = 1;
+  const m = $("#modal");
+  m.innerHTML = `<div class="mf"><img src="img/${u.img}.jpg" alt="${u.ad}"></div>
+  <div class="mi"><button class="kapat" data-kapat>×</button>
+    <span class="etiket">${KAT[u.kat]}</span><h3>${u.ad}</h3><p class="acik"><b>${u.alt}</b><br>${u.acik}</p>
+    <div class="mfiyat">${tl(u.f)}${u.e?`<s>${tl(u.e)}</s>`:""}</div>
+    <span class="adet" style="margin-top:10px"><button id="mAz">−</button><span id="mAdet">1</span><button id="mAr">+</button></span>
+    <div class="tuslar"><a class="btn btn-wa" id="mWa" href="${waUrl(urunMesaj(u))}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#ikon-wa"/></svg>Bu ürünü WhatsApp'tan sipariş et</a>
+    <button class="btn btn-k" id="mEkle">Sepete Ekle</button></div>
+    <ul><li>1–3 iş gününde kargoda</li><li>Kapıda ödeme imkânı</li><li>${ESIK.toLocaleString("tr-TR")} TL üzeri ücretsiz kargo</li></ul>
+  </div>`;
+  const g = () => { $("#mAdet").textContent = adet; $("#mWa").href = waUrl(urunMesaj(u, adet)); };
+  $("#mAz").onclick = () => { adet = Math.max(1, adet-1); g(); };
+  $("#mAr").onclick = () => { adet++; g(); };
+  $("#mEkle").onclick = () => { ekle(h, adet); modalKapat(); };
+  m.classList.add("on"); perde.classList.add("on");
+  history.replaceState(null, "", "#urun/" + h);
+}
+function modalKapat(){ $("#modal").classList.remove("on"); if (!$("#cekmece").classList.contains("on")) perde.classList.remove("on"); if (location.hash.startsWith("#urun/")) history.replaceState(null,"",location.pathname); }
+if (location.hash.startsWith("#urun/")) setTimeout(() => urunAc(location.hash.slice(6)), 400);
+
+/* hızlı form */
+$("#hUrun").innerHTML = U.map(u => `<option value="${u.h}">${u.ad} – ${u.alt} (${tl(u.f)})</option>`).join("");
+$("#hizliForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const u = bul($("#hUrun").value), a = Math.max(1, +$("#hAdet").value || 1);
+  const od = document.querySelector("input[name=odeme]:checked").value;
+  waAc(`Merhaba Ülgen Oliva 👋 Sipariş vermek istiyorum:\n\n🫒 ${u.ad} – ${u.alt}\nAdet: ${a}\nTutar: ${tl(u.f*a)}\n🔗 ${link(u)}\n\nAd Soyad: ${$("#hAd").value}\nİl / İlçe: ${$("#hIl").value}\nÖdeme: ${od}`);
+});
+
+/* telefon sohbet animasyonu */
+const ornek = bul("erken-hasat-tas-baski-zeytinyagi-5-l");
+const sohbet = [
+  {k:"biz",a:0,h:`<div class="onizle"><img src="img/${ornek.img}.jpg" alt=""><div><b>${ornek.ad} 5 L Teneke</b><small>ulgenoliva.com</small></div></div>Merhaba Ülgen Oliva 👋 Bu ürünü sipariş etmek istiyorum:<br>🫒 ${ornek.ad} – 5 L<br>Adet: 2 · ${tl(ornek.f*2)}<br><span style="color:#0a7cc2">ulgenoliva.com/products/erken-hasat…</span>`},
+  {k:"o",a:1,h:"Merhaba, hoş geldiniz 🫒 Siparişinizi aldık! Teslimat adresinizi ve ödeme tercihinizi yazar mısınız?"},
+  {k:"biz",a:1,h:"Kadıköy / İstanbul, kapıda ödeme 🙏"},
+  {k:"o",a:2,h:"Harika! 2 teneke yarın kargoda, ücretsiz kargo 🚚 Takip numaranızı buradan ileteceğiz."}
+];
+let si = 0;
+function sohbetAdim(){
+  const ak = $("#akis");
+  if (si >= sohbet.length){ setTimeout(() => { ak.innerHTML = ""; si = 0; sohbetAdim(); }, 4000); return; }
+  const m = sohbet[si++], d = document.createElement("div");
+  d.className = "balon " + m.k; d.innerHTML = m.h + `<span class="s">${m.k==="biz"?"14:0"+si+" ✓✓":"14:0"+si}</span>`;
+  ak.appendChild(d); requestAnimationFrame(() => requestAnimationFrame(() => d.classList.add("on")));
+  $$(".yol .k").forEach(k => k.classList.toggle("akt", +k.dataset.adim === m.a));
+  setTimeout(sohbetAdim, 2200);
+}
+new IntersectionObserver((en, o) => { if (en[0].isIntersecting){ sohbetAdim(); o.disconnect(); } }, {threshold:.3}).observe($(".tel"));
+
+/* pusula */
+function pusula(){
+  const v = +$("#pKay").value, erken = v >= 50;
+  const p = {meyve: 40 + v*.55, aci: 10 + v*.8, yak: 8 + v*.75, yumus: 95 - v*.75};
+  const sat = [["Meyvemsilik",p.meyve],["Acılık",p.aci],["Yakıcılık",p.yak],["Yumuşaklık",p.yumus]];
+  $("#pTat").innerHTML = sat.map(([a,x]) => `<div><span>${a}</span><i style="--v:${x}%"></i><em>${Math.round(x/10)}/10</em></div>`).join("");
+  $("#pErken").classList.toggle("gizli", !erken); $("#pOlgun").classList.toggle("gizli", erken);
+  $("#pGorsel").style.setProperty("--renk", erken ? "#b9c93a" : "#e2b84a");
+  const u = bul(erken ? "erken-hasat-tas-baski-zeytinyagi-1-l" : "olgun-hasat-naturel-sizma-zeytinyagi-1-l");
+  $("#pAd").textContent = (erken ? "Erken Hasat Taş Baskı" : "Olgun Hasat Natürel Sızma") + " · 1 L";
+  $("#pFiyat").textContent = tl(u.f);
+  $("#pEkle").dataset.ekle = u.h; $("#pWa").href = waUrl(urunMesaj(u)); $("#pWa").target = "_blank";
+}
+$("#pKay").addEventListener("input", pusula); pusula();
+
+/* kiler */
+let kisi = 4;
+$("#kisiler").innerHTML = [1,2,3,4,5,6].map(n => `<button data-k="${n}">${n}${n===6?"+":""}</button>`).join("");
+$("#kisiler").addEventListener("click", e => { const b = e.target.closest("button"); if (b){ kisi = +b.dataset.k; kiler(); } });
+function kiler(){
+  $$("#kisiler button").forEach(b => b.classList.toggle("akt", +b.dataset.k === kisi));
+  const litre = kisi * 5, ten = Math.ceil(litre/5);
+  $("#kLitre").textContent = litre + " L";
+  $("#tenekeler").innerHTML = Array.from({length:ten}, (_,i) => `<div class="teneke" style="animation-delay:${i*.07}s"></div>`).join("");
+  let h, aciklama;
+  if (ten <= 1){ h = "erken-hasat-tas-baski-zeytinyagi-5-l"; aciklama = "1 adet 5 L erken hasat teneke yıllık ihtiyacınızı karşılar."; }
+  else if (ten <= 2){ h = "2x5l-erken-hasat-tas-baski-hediyeli"; aciklama = "2 × 5 L erken hasat paketi: bal ve nar ekşisi hediye, kargo ücretsiz."; }
+  else { h = "4x5l-erken-hasat-tas-baski-paketi"; aciklama = `${ten} teneke ihtiyaç: 4 × 5 L yıllık paket + pekmez, tahin, siyah zeytin.${ten>4?" Fazlası için toplu fiyat isteyin.":""}`; }
+  $("#kAcik").textContent = `Kişi başı yılda ~5 L tüketim varsayımıyla tahmini hesap. Önerimiz: ${aciklama}`;
+  $("#kEkle").dataset.ekle = h;
+  $("#kWa").href = waUrl(`Merhaba Ülgen Oliva, ${kisi} kişilik hanemiz için yıllık ~${litre} L zeytinyağı almak istiyoruz. Toplu fiyat alabilir miyim?\n🔗 ${link(bul(h))}`); $("#kWa").target = "_blank";
+}
+kiler();
+
+/* toast, görünme, sayaç, ipucu */
+let tt; function toast(t){ const el = $("#toast"); el.textContent = t; el.classList.add("on"); clearTimeout(tt); tt = setTimeout(() => el.classList.remove("on"), 2600); }
+const io = new IntersectionObserver(en => en.forEach(x => { if (x.isIntersecting){ x.target.classList.add("on"); io.unobserve(x.target); } }), {threshold:.12});
+$$(".goster").forEach(el => io.observe(el));
+$$("[data-say]").forEach(el => {
+  const hedef = +el.dataset.say, ond = +el.dataset.ond || 0;
+  new IntersectionObserver((en,o) => { if (!en[0].isIntersecting) return; o.disconnect(); const t0 = performance.now();
+    (function f(t){ const k = Math.min(1,(t-t0)/1400), e = 1-Math.pow(1-k,3); el.textContent = (hedef*e).toLocaleString("tr-TR",{minimumFractionDigits:ond,maximumFractionDigits:ond}); if (k<1) requestAnimationFrame(f); })(t0);
+  }).observe(el);
+});
+setTimeout(() => $("#ip").classList.add("gizli"), 9000);
+</script>
+</body>
+</html>

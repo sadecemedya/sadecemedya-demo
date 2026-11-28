@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ülgen Oliva · Instagram Önizleme</title>
+<meta name="robots" content="noindex">
+<style>
+@font-face{font-family:Zodiak;src:url(fonts/Zodiak-Variable.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:Satoshi;src:url(fonts/Satoshi-Variable.woff2) format("woff2");font-weight:300 900}
+@font-face{font-family:"Instrument Serif";src:url(fonts/InstrumentSerif-Italic.ttf);font-style:italic}
+:root{--kagit:#F4EFE3;--krem:#FBF8F1;--zeytin:#21402A;--zeytin2:#2E5638;--yag:#D2C534;--altin:#B88A2E;--koyu:#15241A;--turuncu:#E8572E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Satoshi,system-ui,sans-serif;background:var(--koyu);color:#E9E6D6;line-height:1.5}
+.w{max-width:1320px;margin:0 auto;padding:0 32px}
+.i{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400}
+.ust{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.sm{background:var(--kagit);border-radius:14px;padding:10px 16px;display:flex;align-items:center}
+.sm img{height:34px}
+.ust small{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#9FAA92}
+h1{font-family:Zodiak;font-weight:400;font-size:clamp(40px,5vw,74px);line-height:1;letter-spacing:-.02em;color:#fff;margin:30px 0 14px}
+h1 .i{color:var(--yag)}
+.lead{color:#B9C2AE;max-width:640px;font-size:18px}
+.karsi{display:grid;grid-template-columns:1fr 470px;gap:60px;margin:60px 0 90px;align-items:start}
+.etk{display:inline-block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.etk.k{background:#3a1f19;color:#ff9a7a}
+.etk.y{background:rgba(210,197,52,.15);color:var(--yag)}
+.once img{width:100%;border-radius:14px;display:block;filter:saturate(.75);border:1px solid #2c3a2f}
+.once .iki{display:grid;gap:14px}
+.sorun{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.sorun div{background:#1E2F23;border:1px solid #2f4234;border-radius:12px;padding:12px 14px;font-size:14px;color:#C9CFBD}
+.sorun b{color:#ff9a7a;display:block;font-size:13px}
+
+/* telefon */
+.tel{width:470px;background:#0b0b0b;border-radius:58px;padding:13px;box-shadow:0 60px 120px -40px rgba(0,0,0,.8),0 0 0 2px #333 inset;position:sticky;top:20px}
+.ekran{background:#fff;color:#0c0c0c;border-radius:46px;overflow:hidden;height:940px;position:relative}
+.dur{display:flex;justify-content:space-between;padding:16px 30px 6px;font-size:14px;font-weight:700}
+.navb{display:flex;align-items:center;justify-content:space-between;padding:6px 18px 10px;font-weight:700;font-size:19px}
+.prof{display:flex;align-items:center;gap:22px;padding:6px 18px}
+.av{width:86px;height:86px;border-radius:50%;padding:3px;background:conic-gradient(from 200deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5,#feda75)}
+.av div{width:100%;height:100%;border-radius:50%;background:#fff;border:3px solid #fff;display:grid;place-items:center;overflow:hidden}
+.av img{width:78%}
+.say{display:flex;gap:22px;text-align:left}
+.say b{display:block;font-size:17px}
+.say span{font-size:13px}
+.bio{padding:10px 18px 4px;font-size:13.4px;line-height:1.42}
+.bio .ad{font-weight:700}
+.bio .kat{color:#737373}
+.bio a{color:#00376b;font-weight:600;text-decoration:none}
+.tuslar{display:grid;grid-template-columns:1fr 1fr 1fr 34px;gap:6px;padding:10px 18px}
+.tuslar span{background:#EFEFEF;border-radius:9px;text-align:center;font-weight:600;font-size:13.5px;padding:7px 0}
+.tuslar span.m{background:#0095F6;color:#fff}
+.tuslar span.w{background:#25D366;color:#063b1c}
+.one{display:flex;gap:14px;padding:10px 16px 12px;overflow:hidden}
+.one div{text-align:center;font-size:11.5px;width:64px;flex:none}
+.one i{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;border:1.5px solid #dbdbdb;padding:3px;margin-bottom:4px}
+.one i b{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--zeytin);color:var(--yag)}
+.one svg{width:24px;height:24px}
+.sek{display:flex;border-top:1px solid #dbdbdb}
+.sek span{flex:1;text-align:center;padding:9px 0;color:#999}
+.sek span.a{color:#000;border-bottom:1.5px solid #000}
+.sek svg{width:22px;height:22px}
+.izg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+
+/* gönderi kartları */
+.g{aspect-ratio:3/4;position:relative;overflow:hidden;container-type:inline-size;background:#ddd}
+.g>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g .tip{position:absolute;right:5cqw;top:5cqw;width:9cqw;height:9cqw;color:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));z-index:3}
+.g .koyu{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 28%,rgba(10,20,12,.7) 56%,rgba(10,20,12,.96))}
+.g .alt{text-shadow:0 .5cqw 3cqw rgba(0,0,0,.55)}
+.g .bant{position:absolute;left:0;right:0;bottom:0;height:30%;background:var(--zeytin);padding:6cqw 7cqw;color:#fff}
+.g .bant small{color:var(--yag)}
+.g .bant h4{font-size:9cqw}
+.g.urun .alt,.g.kart .alt{text-shadow:none}
+.g .ust-k{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0) 50%,rgba(12,24,15,.75))}
+.g .alt{position:absolute;left:7cqw;right:7cqw;bottom:7cqw;color:#fff;z-index:2}
+.g .ustm{position:absolute;left:7cqw;right:7cqw;top:8cqw;color:#fff;z-index:2}
+.g h4{font-family:Zodiak;font-weight:400;font-size:11.5cqw;line-height:1;letter-spacing:-.02em}
+.g h4 .i{color:var(--yag);font-size:1.1em}
+.g small{display:block;font-size:4.6cqw;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:3cqw}
+.g .chip{display:inline-flex;align-items:center;gap:2cqw;background:#25D366;color:#053a1b;font-weight:700;font-size:4.8cqw;border-radius:99px;padding:2.4cqw 4.5cqw;margin-top:4cqw}
+.g .chip svg{width:5.5cqw;height:5.5cqw}
+.g .lg{position:absolute;left:7cqw;top:6cqw;width:16cqw;z-index:2}
+.g.urun{background:var(--kagit)}
+.g.urun .sise{position:absolute;height:52%;left:50%;top:24%;transform:translateX(-50%);filter:drop-shadow(0 4cqw 4cqw rgba(0,0,0,.25))}
+.g.urun .alt,.g.urun .ustm{color:var(--zeytin);text-align:center}
+.g.urun h4{font-size:9cqw}
+.g.urun .fiyat{font-weight:800;font-size:7cqw}
+.g.kart{background:var(--zeytin)}
+.g.kart .kutu{position:absolute;left:12cqw;right:12cqw;top:22cqw;aspect-ratio:1;background:#fff;border-radius:5cqw;overflow:hidden}
+.g.kart .kutu img{width:100%;height:100%;object-fit:cover}
+.g.kart .rozet{position:absolute;right:7cqw;top:16cqw;width:26cqw;height:26cqw;border-radius:50%;background:var(--yag);color:var(--zeytin);display:grid;place-items:center;text-align:center;font-family:Zodiak;font-size:7cqw;line-height:1;transform:rotate(10deg);z-index:3}
+.g.kart .rozet small{font-family:Satoshi;font-size:3.3cqw;margin:0;letter-spacing:.08em}
+.g.sss{background:var(--yag);color:var(--zeytin)}
+.g.sss .ustm{color:var(--zeytin)}
+.g.sss h4{font-size:12.5cqw}
+.g.sss ol{list-style:none;position:absolute;left:7cqw;right:7cqw;bottom:8cqw;font-size:4.6cqw;font-weight:600;display:grid;gap:2.5cqw}
+.g.sss li{background:rgba(255,255,255,.55);border-radius:3cqw;padding:2.6cqw 3.5cqw}
+
+.bolum{padding:90px 0;border-top:1px solid #2a3a2e}
+.bolum h2{font-family:Zodiak;font-weight:400;font-size:clamp(34px,4vw,56px);line-height:1.05;color:#fff;margin-bottom:12px}
+.bolum h2 .i{color:var(--yag)}
+.buyuk{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:980px;margin:44px auto 0}
+.buyuk .g{border-radius:6px}
+.aciklama{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:980px;margin:8px auto 0}
+.ritim{display:flex;gap:18px;justify-content:center;margin-top:26px;flex-wrap:wrap;font-size:14px;color:#B9C2AE}
+.ritim span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px;background:var(--c)}
+.kapak{display:flex;gap:34px;flex-wrap:wrap;margin:40px 0 10px}
+.kapak div{text-align:center;font-size:15px;color:#DDE2D2}
+.kapak i{display:grid;place-items:center;width:112px;height:112px;border-radius:50%;border:2px solid #3b4f3f;padding:5px;margin-bottom:10px}
+.kapak i b{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--kagit);color:var(--zeytin)}
+.kapak svg{width:40px;height:40px}
+.degis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.degis div{background:#1C2D21;border:1px solid #2d4232;border-radius:20px;padding:26px}
+.degis .n{font-family:Zodiak;color:var(--yag);font-size:15px}
+.degis h3{font-family:Zodiak;font-weight:400;font-size:24px;color:#fff;margin:4px 0 8px;line-height:1.15}
+.degis p{font-size:15px;color:#B9C2AE}
+footer{padding:50px 0 60px;border-top:1px solid #2a3a2e;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;color:#9FAA92;font-size:14px}
+@media (max-width:1050px){.karsi{grid-template-columns:1fr}.tel{margin:0 auto;position:static}.degis{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.w{padding:0 16px}.tel{width:100%;border-radius:44px}.ekran{height:auto;border-radius:34px}.degis{grid-template-columns:1fr}.sorun{grid-template-columns:1fr}.kapak{gap:16px}.kapak i{width:84px;height:84px}}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="ust"><div class="sm"><img src="ig/sadece-medya_ana-logo.png" alt="Sadece Medya"></div><small>Ülgen Oliva · Instagram önizleme · Kasım 2026</small></div>
+
+  <h1>@ulgenoliva, <span class="i">biz el attıktan</span> sonra.</h1>
+  <p class="lead">Aynı hesap, aynı ürünler, aynı bahçe. Değişen; düzenli bir yayın ritmi, tutarlı bir dil ve her gönderiden WhatsApp siparişine giden kısa yol.</p>
+
+  <div class="karsi">
+    <div class="once">
+      <span class="etk k">Önce · bugün</span>
+      <div class="iki">
+        <img src="ig/ig-profil.jpg" alt="Ülgen Oliva Instagram profili bugünkü hali">
+        <img src="ig/ig-izgara-a.jpg" alt="Ülgen Oliva Instagram ızgarası bugünkü hali">
+      </div>
+      <div class="sorun">
+        <div><b>6 ay sessizlik</b>Son gönderi 19 Mayıs 2026; hasat dönemi boş geçti.</div>
+        <div><b>Dağınık görsel dil</b>Her gönderi farklı font, renk ve şablonda.</div>
+        <div><b>Riskli ifadeler</b>“%100 organik”, sağlık beyanları, CapCut filigranı.</div>
+        <div><b>Sipariş yolu belirsiz</b>Bio'da WhatsApp yok; kargo eşiği 1.000 ↔ 1.500 TL.</div>
+      </div>
+    </div>
+
+    <div>
+      <span class="etk y">Sonra · önerimiz</span>
+      <div class="tel">
+        <div class="ekran">
+          <div class="dur"><span>9:41</span><span>●●● ▮</span></div>
+          <div class="navb"><span>‹</span><span>ulgenoliva</span><span>⋯</span></div>
+          <div class="prof">
+            <div class="av"><div><img src="img/logo.png" alt=""></div></div>
+            <div class="say"><div><b>42</b><span>gönderi</span></div><div><b>8.344</b><span>takipçi</span></div><div><b>124</b><span>takip</span></div></div>
+          </div>
+          <div class="bio">
+            <div class="ad">Ülgen Oliva · Taş Baskı Zeytinyağı</div>
+            <div class="kat">Yiyecek ve İçecek Şirketi</div>
+            🫒 Manisa Muradiye'deki bahçemizden<br>
+            🧪 Laboratuvar analizli · %0,3 asitlik<br>
+            🚚 1.500 TL üzeri ücretsiz kargo · Kapıda ödeme<br>
+            📲 WhatsApp sipariş: 0531 900 64 39<br>
+            <a href="index.html">🔗 ulgenoliva.com</a>
+          </div>
+          <div class="tuslar"><span class="m">Takip Et</span><span>Mesaj</span><span class="w">WhatsApp</span><span>+</span></div>
+          <div class="one" id="oneTel"></div>
+          <div class="sek"><span class="a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span></div>
+          <div class="izg" id="izgTel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="bolum">
+  <div class="w">
+    <span class="etk y">Yeni ızgara · ilk 12 gönderi</span>
+    <h2>Her satırda bir <span class="i">hikâye</span>, bir <span class="i">ürün</span>, bir <span class="i">bilgi.</span></h2>
+    <p class="lead">Görseller yalnızca markanın kendi çekimleri ve ürün fotoğraflarından üretildi; yapay zekâ sahnesi yok. Her gönderinin açıklamasında ürün linki ve WhatsApp sipariş çağrısı yer alır.</p>
+    <div class="buyuk" id="izgBuyuk"></div>
+    <div class="ritim"><span style="--c:#D2C534">Reels: üretim & bahçe</span><span style="--c:#F4EFE3">Ürün & kampanya</span><span style="--c:#2E5638">Bilgi & güven</span></div>
+  </div>
+</section>
+
+<section class="bolum">
+  <div class="w">
+    <span class="etk y">Öne çıkanlar</span>
+    <h2>Müşterinin sorusu, <span class="i">tek dokunuşta</span> cevaplı.</h2>
+    <div class="kapak" id="kapakB"></div>
+  </div>
+</section>
+
+<section class="bolum">
+  <div class="w">
+    <span class="etk y">Neler değişiyor?</span>
+    <h2>Altı adımda <span class="i">yeni</span> @ulgenoliva</h2>
+    <div class="degis">
+      <div><span class="n">01</span><h3>Profil ve bio</h3><p>Tek menşe (Manisa Muradiye), tek kargo eşiği, WhatsApp sipariş hattı ve doğru işletme kategorisi. “Yapay zekâ ile oluşturulan profil” etiketinin nedeni giderilir.</p></div>
+      <div><span class="n">02</span><h3>Düzenli yayın ritmi</h3><p>Haftada 3–4 gönderi, her gün story. Hasat dönemi ve kampanyalar takvimde önceden planlanır.</p></div>
+      <div><span class="n">03</span><h3>Tek görsel dil</h3><p>Zeytin yeşili, krem ve yağ sarısı; iki yazı karakteri. Hesap ilk bakışta tanınır hâle gelir.</p></div>
+      <div><span class="n">04</span><h3>Güvenli ifade</h3><p>Sağlık beyanı ve “%100 organik” yerine laboratuvar rakamları. Reklam reddi ve şikâyet riski azalır.</p></div>
+      <div><span class="n">05</span><h3>WhatsApp'a kısa yol</h3><p>Her gönderide ürün linki + WhatsApp butonu; Instagram Mağaza etiketleri ve WhatsApp mesaj reklamları.</p></div>
+      <div><span class="n">06</span><h3>Ölç, raporla, büyüt</h3><p>Meta Pixel ve Dönüşüm API ile hangi gönderinin sipariş getirdiği ölçülür; aylık rapor ve toplantı.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="w"><footer><div class="sm"><img src="ig/sadece-medya_ana-logo.png" alt="Sadece Medya"></div><span>www.sadecemedya.com · +90 542 525 12 92 · @sadecemedya.co</span></footer></div>
+
+<svg width="0" height="0" style="position:absolute">
+<symbol id="reel" viewBox="0 0 24 24"><path fill="currentColor" d="M3 7.5V17a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7.5H3Zm7 3.2 5 2.9-5 2.9v-5.8ZM20.7 6 18.3 3H15l2.4 3h3.3ZM13.3 6l-2.4-3H7.6L10 6h3.3ZM5.9 6 3.6 3.2A4 4 0 0 0 3 5.5V6h2.9Z"/></symbol>
+<symbol id="cok" viewBox="0 0 24 24"><path fill="currentColor" d="M6 3h11a4 4 0 0 1 4 4v11h-2V7a2 2 0 0 0-2-2H6V3Zm-3 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.07c-.24.68-1.42 1.3-1.95 1.34-.5.04-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.83s.7-2.01.96-2.29c.24-.27.53-.34.71-.34l.51.01c.16 0 .39-.06.6.46.24.56.79 1.93.86 2.07.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35Z"/></symbol>
+</svg>
+<script>
+const WA = `<span class="chip"><svg><use href="#wa"/></svg>WhatsApp'tan sipariş</span>`;
+const reel = `<svg class="tip"><use href="#reel"/></svg>`, cok = `<svg class="tip"><use href="#cok"/></svg>`;
+const G = [
+ {h:`<img class="bg" src="img/akis.jpg" alt=""><div class="koyu"></div>${reel}<div class="alt"><small>2026 hasadı</small><h4>Yeni hasat <span class="i">başladı.</span></h4></div>`, n:"Reels · sıkımdan ilk akış"},
+ {h:`<img class="bg" src="ig/post-1.jpg" alt="">`, n:"Post · yeni hasat duyurusu"},
+ {c:"urun", h:`<div class="ustm"><h4>Erken Hasat Taş Baskı</h4></div><img class="sise" src="img/erken-sise.png" alt=""><div class="alt"><div class="fiyat">1 L · 710 TL</div>${WA}</div>`, n:"Ürün · tek tıkla sipariş"},
+ {h:`<img class="bg" src="ig/sikim.jpg" alt=""><div class="koyu"></div>${reel}<div class="alt"><small>Perde arkası</small><h4>Taş değirmende <span class="i">bir gün.</span></h4></div>`, n:"Reels · üretim"},
+ {h:`<img class="bg" src="ig/post-2.jpg" alt="">`, n:"Post · analiz kartı"},
+ {c:"kart", h:`<div class="ustm"><small>Kilerin yıldızı</small></div><div class="kutu"><img src="img/erken-5l.jpg" alt=""></div><div class="rozet"><div><small>5 LİTRE</small><br>2.860<br><small>TL</small></div></div><div class="alt" style="text-align:center"><h4 style="font-size:9cqw">5 L teneke</h4>${WA}</div>`, n:"Kampanya · teneke"},
+ {h:`<img class="bg" src="ig/post-3.jpg" alt="">${cok}`, n:"Kaydırmalı · erken mi olgun mu?"},
+ {h:`<img class="bg" src="img/bahce.jpg" alt="" style="object-position:30% 0"><div class="koyu"></div>${reel}<div class="alt"><small>Manisa Muradiye</small><h4>Bahçemizden <span class="i">kapınıza.</span></h4></div>`, n:"Reels · bahçe"},
+ {h:`<img class="bg" src="img/avantaj-paketi.jpg" alt="" style="height:72%;object-position:50% 40%">${cok}<div class="bant"><small>3.199 TL · ücretsiz kargo</small><h4>Kilerini tek seferde doldur.</h4></div>`, n:"Kampanya · avantaj paketi"},
+ {h:`<img class="bg" src="ig/kase.jpg" alt=""><div class="koyu"></div>${reel}<div class="alt"><small>Tarif</small><h4>Salatanın sırrı: <span class="i">bir kaşık.</span></h4></div>`, n:"Reels · tarif"},
+ {c:"sss", h:`<div class="ustm"><small>Sık sorulan</small><h4>Teneke mi, cam şişe mi?</h4></div>${cok}<ol><li>Teneke: ışık geçirmez, ekonomik</li><li>Cam şişe: günlük kullanım</li><li>İpucu: tenekeden koyu şişeye aktarın</li></ol>`, n:"Bilgi · SSS serisi"},
+ {h:`<img class="bg" src="ig/el.jpg" alt=""><div class="koyu"></div>${reel}<div class="alt"><small>Canlı sıkım</small><h4>Sıkımdan <span class="i">şişeye.</span></h4></div>`, n:"Reels · sıkım"}
+];
+const kart = g => `<div class="g ${g.c||""}">${g.h}</div>`;
+document.getElementById("izgTel").innerHTML = G.slice(0,9).map(kart).join("");
+document.getElementById("izgBuyuk").innerHTML = G.map(kart).join("");
+const ik = {
+ "Sipariş":`<svg viewBox="0 0 24 24"><use href="#wa"/></svg>`,
+ "Kampanya":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12V5a2 2 0 0 1 2-2h7l9 9-9 9-9-9Z"/><circle cx="8" cy="8" r="1.5"/></svg>`,
+ "Analiz":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></svg>`,
+ "Hasat":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19C5 10 11 5 20 4c-1 9-6 15-15 15Z"/><path d="M5 19 14 10"/></svg>`,
+ "Kargo":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>`,
+ "Tarifler":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13h16a8 8 0 0 1-16 0Z"/><path d="M9 9c0-2 2-2 2-4M13 9c0-2 2-2 2-4"/></svg>`,
+ "Yorumlar":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H9l-5 4V5Z"/></svg>`
+};
+document.getElementById("oneTel").innerHTML = Object.entries(ik).slice(0,6).map(([a,s]) => `<div><i><b>${s}</b></i>${a}</div>`).join("");
+document.getElementById("kapakB").innerHTML = Object.entries(ik).map(([a,s]) => `<div><i><b>${s}</b></i>${a}</div>`).join("");
+</script>
+</body>
+</html>
